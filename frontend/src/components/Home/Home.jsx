@@ -7,7 +7,7 @@ function Home() {
         <div className={styles.home}>
             {/* Hero Section */}
             <section className={styles.hero}>
-                <h1>Welcome to ShopGLobe!</h1>
+                <h1>Welcome to ShopPlus!</h1>
                 <p>Discover amazing deals and exclusive offers every day.</p>
                 <button className={styles.exploreBtn}>
                     <Link to="/products">Explore Now</Link>
