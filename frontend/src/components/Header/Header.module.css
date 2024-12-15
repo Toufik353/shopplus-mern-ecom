@@ -1,0 +1,304 @@
+.header {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  padding: 1rem 2rem;
+  position: relative;
+}
+
+.logo h1 a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.navList {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.navList li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.cartCount {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
+.header .navList li a:hover {
+  text-decoration: underline;
+}
+
+.navList li:hover .dropdown {
+  display: block;
+}
+
+.navList li .dropdown {
+  display: none;
+  position: absolute;
+  background-color: #444;
+  list-style: none;
+  padding: 1rem;
+  gap: 1rem;
+  top: 50px;
+  left: 0;
+}
+
+.navList li .dropdown li {
+  padding: 0.5rem 1rem;
+}
+
+.navList li .dropdown li a {
+  color: white;
+}
+
+/* Button styles */
+.authButton {
+  background-color: #007bff;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.authButton:hover {
+  background-color: #0056b3;
+}
+
+.cartButton {
+  background-color: #28a745;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.cartButton:hover {
+  background-color: #218838;
+}
+
+.searchWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 80%; 
+  max-width: 500px; 
+  margin-left: 20px;
+  border-radius: 25%;
+}
+
+.searchInput {
+  width: 90%;
+  padding: 10px 40px 10px 10px; 
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem; 
+  box-sizing: border-box; 
+}
+
+.clearButton {
+  position: absolute;
+  right: 40px; 
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #888;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.clearButton:hover {
+  color: #333;
+}
+
+.searchIcon {
+  position: absolute;
+  right: 55px; 
+  top: 55%;
+  transform: translateY(-50%);
+  color: #888;
+  font-size: 1.3rem;
+}
+
+@media (max-width: 768px) {
+  .searchWrapper {
+    max-width: 100%; 
+  }
+
+  .searchInput {
+    font-size: 0.9rem; 
+  }
+
+  .searchIcon,
+  .clearButton {
+    font-size: 1.1rem; 
+  }
+}
+/* Mobile & Tablet responsive */
+@media (max-width: 1024px) { 
+  .hamburger {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #333;
+    width: 100%;
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    padding: 1rem 0;
+    align-items: center;
+  }
+
+  .nav.open {
+    display: flex;
+  }
+
+  .navList {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .cart {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    justify-content: center;
+    width: 100%;
+    padding: 0.5rem 1rem;
+  }
+
+  .cartCount {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: 0.5rem;
+  }
+
+  .userName {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 1rem;
+  }
+
+  .userName span {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+
+  .userName button {
+    background-color: #ff4d4f;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    text-align: left;
+  }
+
+  .userName button:hover {
+    background-color: #ff7875;
+  }
+
+  .navList li {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) { /* Mobile */
+  .header {
+    padding: 1rem;
+  }
+
+  .logo h1 a {
+    font-size: 1.3rem;
+  }
+
+  .hamburger {
+    font-size: 1.5rem;
+  }
+
+  .navList a {
+    font-size: 1.2rem;
+  }
+
+  .cart {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+    width: 100%;
+    padding: 0.5rem 1rem;
+  }
+
+  .cartCount {
+    font-size: 1rem;
+  }
+
+  /* Show userName section on mobile */
+  .userName {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 1rem;
+  }
+
+  .userName span {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+
+  .userName button {
+    background-color: #ff4d4f;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    text-align: left;
+  }
+
+  .userName button:hover {
+    background-color: #ff7875;
+  }
+}

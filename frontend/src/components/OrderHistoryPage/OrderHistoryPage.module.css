@@ -1,0 +1,86 @@
+.orderHistoryContainer {
+  padding: 20px;
+}
+
+.pageTitle {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.ordersList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.orderCard {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.trackingSection {
+  margin-top: 10px;
+}
+
+.itemsSection {
+  margin-top: 10px;
+}
+
+.addReviewButton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  display: block;
+}
+
+.addReviewButton:hover {
+  background-color: #0056b3;
+}
+
+.reviewFormContainer {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #e9ecef;
+  border-radius: 6px;
+  display: block;
+}
+
+.reviewFormContainer form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.submitReviewBtn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submitReviewBtn:hover {
+  background-color: #218838;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+/* Review form visibility */
+.reviewFormContainer {
+  display: none; 
+  /* Default hidden */
+}
+
+.reviewFormContainer.active {
+  display: block; 
+}

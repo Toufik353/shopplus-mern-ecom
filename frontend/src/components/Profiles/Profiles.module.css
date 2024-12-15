@@ -1,0 +1,197 @@
+.container {
+  max-width: 900px;
+  min-height: 600px;
+  margin: unset;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+
+.header {
+  text-align: center; 
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.profileInfo, .form, .addressSection {
+  margin-top: 20px;
+}
+
+.addAddressButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.addAddressButton:hover {
+  background-color: #0056b3;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.subHeader {
+  font-size: 1.5rem;
+  margin-top: 30px;
+}
+
+.profileInfo {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+}
+
+.profileInfo p {
+  margin: 5px 0;
+}
+
+.editButton {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s;
+}
+
+.editButton:hover {
+  background-color: #0056b3;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+}
+
+.formGroup label {
+  flex: 1;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.formGroup .input {
+  flex: 2;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button, .cancelButton {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.button {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.button:hover {
+  background-color: #218838;
+}
+
+.cancelButton {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.cancelButton:hover {
+  background-color: #5a6268;
+}
+
+.modalContent {
+  padding: 15px;
+}
+
+.addressSection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.addressItem {
+  background-color: #f1f1f1;
+  padding: 15px;
+  border-radius: 8px;
+  flex: 1;
+  min-width: 200px;
+}
+
+@media (max-width: 768px) 
+{  
+  .container {
+    padding: 15px;
+  }
+  .formGroup {
+    flex-direction: column;
+  }
+  .input {
+    width: 100%;
+  }
+  .buttonGroup {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) { 
+  .container {
+    padding: 10px;
+  }
+  .formGroup {
+    padding: 10px;
+  }
+  .input {
+    padding: 8px;
+  }
+  .button {
+    font-size: 14px;
+  }
+}
