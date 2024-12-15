@@ -6,8 +6,6 @@ import App from './App.jsx';
 import { Provider } from "react-redux";
 import { store, persistor } from './redux/cartStore.js';
 import { PersistGate } from 'redux-persist/integration/react';
-import OrderConfirmationPage from './components/OrderConfirmPage/OrderConfirmPage.jsx';
-
 const ProductList = lazy(() => import('./components/ProductList/ProductList.jsx'));
 const ProductDetails = lazy(() => import('./components/ProductDetails/ProductDetails.jsx'));
 const Login = lazy(() => import('./components/Login/Login.jsx'));
